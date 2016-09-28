@@ -14,3 +14,8 @@ The Classloader leak is reproducible under the following conditions (at least th
 **Note:** This project already contains a _"ClassLoader-Leak-Preventor"_ (`de.test.SSLClassloaderLeakPreventor`). So if you just run this project you will **not** see the classloader leak!
 
 You have to disable the Shutdown-Hook in `de.test.SSLClassloaderLeakPreventor` if you want to reproduce the leak.
+
+## Potential for improvement
+
+1. The `SSLClassloaderLeakPreventor` simply removes the Exception. Maybe it would be saver to check if there are references to Classes from the `WebappClassLoader`
+2. Integration in `classloader-leak-prevention`, see https://github.com/mjiderhamn/classloader-leak-prevention/issues/58
