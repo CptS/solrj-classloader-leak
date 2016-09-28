@@ -1,5 +1,7 @@
 # SolrJ Classloader Leak Demonstration
 
+Demo project for this Question on Stackoverflow: http://stackoverflow.com/q/39741147/4864870
+
 The Classloader leak is reproducible under the following conditions (at least this is the environment which I have tested): 
 
 - Tomcat Version: Apache Tomcat/8.0.14 (Debian)
