@@ -11,4 +11,4 @@ The Classloader leak is reproducible under the following conditions (at least th
 
 **Note:** This project already contains a _"ClassLoader-Leak-Preventor"_ (`de.test.SSLClassloaderLeakPreventor`). So if you just run this project you will **not** see the classloader leak!
 
-You have to disable Shutdown-Hook in `de.test.SSLClassloaderLeakPreventor` if you want to reproduce the leak.
+You have to disable the Shutdown-Hook in `de.test.SSLClassloaderLeakPreventor` if you want to reproduce the leak.
