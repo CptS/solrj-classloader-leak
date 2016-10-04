@@ -18,7 +18,7 @@ public class SolrJConfig {
     /**
      * The Solr URL.
      */
-    private static final String SOLR_URL = "http://172.21.16.29:8984/solr/sf5_dev";
+    private static final String SOLR_URL = "http://localhost:8984/solr/test";
 
     /**
      * Factory method for the {@link SolrClient}.

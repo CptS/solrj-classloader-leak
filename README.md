@@ -15,6 +15,15 @@ The Classloader leak is reproducible under the following conditions (at least th
 
 You have to disable the Shutdown-Hook in `de.test.SSLClassloaderLeakPreventor` if you want to reproduce the leak.
 
+## Environment
+
+1. **Solr**  
+   The URL defined in [`SolrJConfig.SOLR_URL`](src/main/java/de/test/spring/SolrJConfig.java) points to the Solr server.
+   - download: http://www.apache.org/dyn/closer.lua/lucene/solr/6.2.1
+   - run: `solr start -p 8984`
+2. **Certificate with unparseable extension**
+   More information comming soon
+
 ## Potential for improvement
 
 1. The `SSLClassloaderLeakPreventor` simply removes the Exception. Maybe it would be saver to check if there are references to Classes from the `WebappClassLoader`
