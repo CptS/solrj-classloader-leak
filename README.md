@@ -23,7 +23,7 @@ You have to disable the Shutdown-Hook in `de.test.SSLClassloaderLeakPreventor` i
    - run: `solr start -p 8984`
 2. **Certificate with unparseable extension**  
    I don't know exactly where the certificate with the _unparseable extension_ came from. I haven't installed any additional certificate in the keystore.
-   The [`cecerts`](cecerts) Keystore used in my tests is attached.
+   The [`cacerts`](cacerts) Keystore used in my tests is attached.
 
 ## Potential for improvement
 
