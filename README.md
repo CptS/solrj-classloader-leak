@@ -21,8 +21,8 @@ You have to disable the Shutdown-Hook in `de.test.SSLClassloaderLeakPreventor` i
    The URL defined in [`SolrJConfig.SOLR_URL`](src/main/java/de/test/spring/SolrJConfig.java) points to the Solr server.
    - download: http://www.apache.org/dyn/closer.lua/lucene/solr/6.2.1
    - run: `solr start -p 8984`
-2. **Certificate with unparseable extension**
-   I don't know exactly where the certificate with the _unparseable extension_ came from. I haven't installed any certificate in the keystore.
+2. **Certificate with unparseable extension**  
+   I don't know exactly where the certificate with the _unparseable extension_ came from. I haven't installed any additional certificate in the keystore.
    The [`cecerts`](cecerts) Keystore used in my tests is attached.
 
 ## Potential for improvement
