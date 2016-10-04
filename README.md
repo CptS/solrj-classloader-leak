@@ -22,7 +22,8 @@ You have to disable the Shutdown-Hook in `de.test.SSLClassloaderLeakPreventor` i
    - download: http://www.apache.org/dyn/closer.lua/lucene/solr/6.2.1
    - run: `solr start -p 8984`
 2. **Certificate with unparseable extension**
-   More information comming soon
+   I don't know exactly where the certificate with the _unparseable extension_ came from. I haven't installed any certificate in the keystore.
+   The [`cecerts`](cecerts) Keystore used in my tests is attached.
 
 ## Potential for improvement
 
